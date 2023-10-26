@@ -1,0 +1,21 @@
+@media screen and (max-width: 768px) {
+  .main-title {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .left-section {
+    display: none;
+  }
+  .right-section {
+    width: 100%;
+  }
+  .main-content {
+    margin: 28px 30px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .error-text {
+    font-size: 12px;
+  }
+}

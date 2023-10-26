@@ -1,0 +1,230 @@
+/* Variables */
+:root {
+  /* Fonts */
+  --title-font: "Roboto Slab", serif;
+  --main-font: "Kanit", sans-serif;
+  --arabic-font: "Cairo", sans-serif;
+  /* Colors */
+  --main-color: #2dc653;
+  --button-color: #409455;
+}
+/* Global */
+body {
+  height: fit-content;
+  margin: 0;
+  padding: 0;
+}
+.show {
+  display: block !important;
+}
+/* Section Containers */
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+/* Left Section */
+.left-section {
+  width: 35%;
+  background-image: url(../images/nature.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    12,
+    12,
+    12,
+    0.8
+  ); /* Adjust the alpha value for desired opacity */
+  z-index: 1;
+}
+.content-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+}
+.main-title {
+  position: relative;
+  color: white;
+  z-index: 2;
+  font-family: var(--title-font);
+  text-transform: uppercase;
+  font-size: 36px;
+  text-align: left;
+}
+.main-title span {
+  color: var(--main-color);
+}
+/* Right Section */
+.right-section {
+  width: calc(100% - 35%);
+}
+.main-content {
+  margin: 28px 100px;
+}
+.title {
+  font-family: var(--main-font);
+  font-size: 28px;
+  font-weight: 600;
+}
+/* Form styling */
+.form-container {
+  display: flex;
+  flex-flow: column;
+}
+/* Inputs */
+.form-container input {
+  margin: 0 0 20px 0;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+  height: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--main-font);
+}
+.form-container input:focus,
+.select-univ:focus {
+  outline: none;
+  border-bottom: 1px solid var(--main-color);
+}
+.arabic-name {
+  direction: rtl;
+  font-family: var(--arabic-font) !important;
+  font-weight: 600;
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Phone number */
+.phone {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  margin: 0 0 20px 0;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--main-font);
+}
+.flag-container {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  margin: 0 5px 0 0;
+}
+.flag {
+  width: 20px;
+  margin: 0 5px 0 0;
+}
+.phone-num {
+  width: 100%;
+  margin: 0 !important;
+}
+/* Select University */
+.select-univ {
+  margin: 0 0 20px 0;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+  height: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--main-font);
+  position: relative;
+  cursor: pointer;
+}
+.select-content {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.select-title,
+.arrow-down {
+  color: rgba(12, 12, 12, 0.6);
+}
+.university-selection {
+  color: #000 !important;
+}
+.select-univ .options {
+  position: absolute;
+  top: 31px;
+  width: 100%;
+  height: fit-content;
+  padding: 10px 0;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.options option {
+  padding: 5px;
+  cursor: pointer;
+}
+.options option:hover {
+  background-color: var(--main-color);
+  color: #fff;
+}
+.hide {
+  display: none;
+}
+/* Genders Selection */
+.genders-container {
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--main-font);
+}
+.genders-container input {
+  margin-bottom: 0;
+}
+.gender-type {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.male,
+.female {
+  margin: 0 5px 0 0 !important;
+}
+input[type="radio"] {
+  accent-color: var(--main-color);
+}
+/* Submit button */
+.submit {
+  margin: 15px 0;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--main-font);
+  cursor: pointer;
+  background-color: var(--button-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+.submit:hover {
+  background-color: var(--main-color);
+  transition-duration: 0.5s;
+}
+/* Error Messages */
+.error {
+  border-bottom: 1px solid red !important;
+}
+.error-text {
+  font-family: var(--arabic-font);
+  font-weight: 700;
+  color: red;
+  margin-top: -24px;
+  margin-left: auto;
+}
+#ph-error {
+  margin-top: 0;
+  position: absolute;
+  right: 0;
+}

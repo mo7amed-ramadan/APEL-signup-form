@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <!-- CSS File -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mediaQuery.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Kanit:wght@400;500;600;700&family=Roboto+Slab:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="left-section">
+            <div class="overlay"></div>
+            <div class="content-container">
+                <h1 class="main-title">be a <br> change-maker <span>volunteer</span> with us</h1>
+            </div>
+        </section>
+        <section class="right-section">
+            <div class="main-content">
+                <h2 class="title">Create Account</h2>
+                <!-- Form -->
+                <form class="form-container" id="form">
+                    <input type="text" class="arabic-name" id="arabic-name" placeholder="الاسم بالكامل">
+                    <span id="ar-error" class="hide error-text"></span>
+                    <input type="text" class="english-name" id="english-name" placeholder="Full Name" required>
+                    <span id="en-error" class="hide error-text"></span>
+                    <input type="email" class="email" id="email" placeholder="Email Address" required>
+                    <span id="em-error" class="hide error-text"></span>
+                    <div class="phone">
+                        <div class="flag-container">
+                            <img src="./images/flag.png" alt="egypt flag" class="flag">
+                            <span>+20</span>
+                        </div>
+                        <div style="width: 100%; position: relative;">
+                            <input type="tel" class="phone-num" id="phone-num" placeholder="Phone Number" maxlength="10"
+                                required>
+                            <span id="ph-error" class="hide error-text"></span>
+                        </div>
+                    </div>
+                    <input type="text" class="national-id" id="national-id" placeholder="National Id" maxlength="14"
+                        required>
+                    <span id="nt-error" class="hide error-text"></span>
+                    <div class="select-univ" id="select-univ">
+                        <div class="select-content">
+                            <span class="select-title" id="select-title">Select a university</span>
+                            <i class="fa-solid fa-chevron-down arrow-down"></i>
+                        </div>
+                        <div class="options hide" id="options">
+                            <option id="1" value="Aswan University">Aswan University</option>
+                            <option id="2" value="Ain Shams University">Ain Shams University</option>
+                            <option id="3" value="Cairo University">Cairo University</option>
+                        </div>
+                    </div>
+                    <input type="number" class="academic-year" id="academic-year" placeholder="Academic Year" max="7"
+                        required>
+                    <div class="genders-container">
+                        <div class="gender-type">
+                            <input type="radio" class="male" id="male" name="gender" required>
+                            <label for="male">Male</label>
+                        </div>
+                        <div class="gender-type">
+                            <input type="radio" class="female" id="female" name="gender" required>
+                            <label for="female">Female</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="submit" id="submit">Create Account</button>
+                </form>
+            </div>
+        </section>
+    </div>
+    <!-- Java script File -->
+    <script src="./js/main.js"></script>
+    <script src="./js/dropDown.js"></script>
+    <!-- Font Awesome Script -->
+    <script src="./js/all.js"></script>
+    <script src="./js/all.min.js"></script>
+</body>
+
+</html>
